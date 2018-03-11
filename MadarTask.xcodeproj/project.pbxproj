@@ -1,0 +1,545 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		847CF21E2055F31400880238 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847CF21D2055F31400880238 /* AppDelegate.swift */; };
+		847CF2202055F31400880238 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847CF21F2055F31400880238 /* ViewController.swift */; };
+		847CF2232055F31400880238 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 847CF2212055F31400880238 /* Main.storyboard */; };
+		847CF2262055F31400880238 /* MadarTask.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 847CF2242055F31400880238 /* MadarTask.xcdatamodeld */; };
+		847CF2282055F31400880238 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 847CF2272055F31400880238 /* Assets.xcassets */; };
+		847CF22B2055F31400880238 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 847CF2292055F31400880238 /* LaunchScreen.storyboard */; };
+		847CF2362055F31500880238 /* MadarTaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847CF2352055F31500880238 /* MadarTaskTests.swift */; };
+		847CF2412055F31500880238 /* MadarTaskUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847CF2402055F31500880238 /* MadarTaskUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		847CF2322055F31500880238 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 847CF2122055F31400880238 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 847CF2192055F31400880238;
+			remoteInfo = MadarTask;
+		};
+		847CF23D2055F31500880238 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 847CF2122055F31400880238 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 847CF2192055F31400880238;
+			remoteInfo = MadarTask;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		847CF21A2055F31400880238 /* MadarTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MadarTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		847CF21D2055F31400880238 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		847CF21F2055F31400880238 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		847CF2222055F31400880238 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		847CF2252055F31400880238 /* MadarTask.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MadarTask.xcdatamodel; sourceTree = "<group>"; };
+		847CF2272055F31400880238 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		847CF22A2055F31400880238 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		847CF22C2055F31400880238 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		847CF2312055F31500880238 /* MadarTaskTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MadarTaskTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		847CF2352055F31500880238 /* MadarTaskTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MadarTaskTests.swift; sourceTree = "<group>"; };
+		847CF2372055F31500880238 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		847CF23C2055F31500880238 /* MadarTaskUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MadarTaskUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		847CF2402055F31500880238 /* MadarTaskUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MadarTaskUITests.swift; sourceTree = "<group>"; };
+		847CF2422055F31500880238 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		847CF2172055F31400880238 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		847CF22E2055F31500880238 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		847CF2392055F31500880238 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		847CF2112055F31400880238 = {
+			isa = PBXGroup;
+			children = (
+				847CF21C2055F31400880238 /* MadarTask */,
+				847CF2342055F31500880238 /* MadarTaskTests */,
+				847CF23F2055F31500880238 /* MadarTaskUITests */,
+				847CF21B2055F31400880238 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		847CF21B2055F31400880238 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				847CF21A2055F31400880238 /* MadarTask.app */,
+				847CF2312055F31500880238 /* MadarTaskTests.xctest */,
+				847CF23C2055F31500880238 /* MadarTaskUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		847CF21C2055F31400880238 /* MadarTask */ = {
+			isa = PBXGroup;
+			children = (
+				847CF21D2055F31400880238 /* AppDelegate.swift */,
+				847CF21F2055F31400880238 /* ViewController.swift */,
+				847CF2212055F31400880238 /* Main.storyboard */,
+				847CF2272055F31400880238 /* Assets.xcassets */,
+				847CF2292055F31400880238 /* LaunchScreen.storyboard */,
+				847CF22C2055F31400880238 /* Info.plist */,
+				847CF2242055F31400880238 /* MadarTask.xcdatamodeld */,
+			);
+			path = MadarTask;
+			sourceTree = "<group>";
+		};
+		847CF2342055F31500880238 /* MadarTaskTests */ = {
+			isa = PBXGroup;
+			children = (
+				847CF2352055F31500880238 /* MadarTaskTests.swift */,
+				847CF2372055F31500880238 /* Info.plist */,
+			);
+			path = MadarTaskTests;
+			sourceTree = "<group>";
+		};
+		847CF23F2055F31500880238 /* MadarTaskUITests */ = {
+			isa = PBXGroup;
+			children = (
+				847CF2402055F31500880238 /* MadarTaskUITests.swift */,
+				847CF2422055F31500880238 /* Info.plist */,
+			);
+			path = MadarTaskUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		847CF2192055F31400880238 /* MadarTask */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 847CF2452055F31500880238 /* Build configuration list for PBXNativeTarget "MadarTask" */;
+			buildPhases = (
+				847CF2162055F31400880238 /* Sources */,
+				847CF2172055F31400880238 /* Frameworks */,
+				847CF2182055F31400880238 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MadarTask;
+			productName = MadarTask;
+			productReference = 847CF21A2055F31400880238 /* MadarTask.app */;
+			productType = "com.apple.product-type.application";
+		};
+		847CF2302055F31500880238 /* MadarTaskTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 847CF2482055F31500880238 /* Build configuration list for PBXNativeTarget "MadarTaskTests" */;
+			buildPhases = (
+				847CF22D2055F31500880238 /* Sources */,
+				847CF22E2055F31500880238 /* Frameworks */,
+				847CF22F2055F31500880238 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				847CF2332055F31500880238 /* PBXTargetDependency */,
+			);
+			name = MadarTaskTests;
+			productName = MadarTaskTests;
+			productReference = 847CF2312055F31500880238 /* MadarTaskTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		847CF23B2055F31500880238 /* MadarTaskUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 847CF24B2055F31500880238 /* Build configuration list for PBXNativeTarget "MadarTaskUITests" */;
+			buildPhases = (
+				847CF2382055F31500880238 /* Sources */,
+				847CF2392055F31500880238 /* Frameworks */,
+				847CF23A2055F31500880238 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				847CF23E2055F31500880238 /* PBXTargetDependency */,
+			);
+			name = MadarTaskUITests;
+			productName = MadarTaskUITests;
+			productReference = 847CF23C2055F31500880238 /* MadarTaskUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		847CF2122055F31400880238 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = ITI;
+				TargetAttributes = {
+					847CF2192055F31400880238 = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+					};
+					847CF2302055F31500880238 = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 847CF2192055F31400880238;
+					};
+					847CF23B2055F31500880238 = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 847CF2192055F31400880238;
+					};
+				};
+			};
+			buildConfigurationList = 847CF2152055F31400880238 /* Build configuration list for PBXProject "MadarTask" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 847CF2112055F31400880238;
+			productRefGroup = 847CF21B2055F31400880238 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				847CF2192055F31400880238 /* MadarTask */,
+				847CF2302055F31500880238 /* MadarTaskTests */,
+				847CF23B2055F31500880238 /* MadarTaskUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		847CF2182055F31400880238 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				847CF22B2055F31400880238 /* LaunchScreen.storyboard in Resources */,
+				847CF2282055F31400880238 /* Assets.xcassets in Resources */,
+				847CF2232055F31400880238 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		847CF22F2055F31500880238 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		847CF23A2055F31500880238 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		847CF2162055F31400880238 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				847CF2262055F31400880238 /* MadarTask.xcdatamodeld in Sources */,
+				847CF2202055F31400880238 /* ViewController.swift in Sources */,
+				847CF21E2055F31400880238 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		847CF22D2055F31500880238 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				847CF2362055F31500880238 /* MadarTaskTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		847CF2382055F31500880238 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				847CF2412055F31500880238 /* MadarTaskUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		847CF2332055F31500880238 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 847CF2192055F31400880238 /* MadarTask */;
+			targetProxy = 847CF2322055F31500880238 /* PBXContainerItemProxy */;
+		};
+		847CF23E2055F31500880238 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 847CF2192055F31400880238 /* MadarTask */;
+			targetProxy = 847CF23D2055F31500880238 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		847CF2212055F31400880238 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				847CF2222055F31400880238 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		847CF2292055F31400880238 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				847CF22A2055F31400880238 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		847CF2432055F31500880238 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		847CF2442055F31500880238 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		847CF2462055F31500880238 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MadarTask/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ITIITI.MadarTask;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		847CF2472055F31500880238 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MadarTask/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ITIITI.MadarTask;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		847CF2492055F31500880238 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = MadarTaskTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ITIITI.MadarTaskTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MadarTask.app/MadarTask";
+			};
+			name = Debug;
+		};
+		847CF24A2055F31500880238 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = MadarTaskTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ITIITI.MadarTaskTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MadarTask.app/MadarTask";
+			};
+			name = Release;
+		};
+		847CF24C2055F31500880238 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = MadarTaskUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ITIITI.MadarTaskUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = MadarTask;
+			};
+			name = Debug;
+		};
+		847CF24D2055F31500880238 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = MadarTaskUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ITIITI.MadarTaskUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = MadarTask;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		847CF2152055F31400880238 /* Build configuration list for PBXProject "MadarTask" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				847CF2432055F31500880238 /* Debug */,
+				847CF2442055F31500880238 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		847CF2452055F31500880238 /* Build configuration list for PBXNativeTarget "MadarTask" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				847CF2462055F31500880238 /* Debug */,
+				847CF2472055F31500880238 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		847CF2482055F31500880238 /* Build configuration list for PBXNativeTarget "MadarTaskTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				847CF2492055F31500880238 /* Debug */,
+				847CF24A2055F31500880238 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		847CF24B2055F31500880238 /* Build configuration list for PBXNativeTarget "MadarTaskUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				847CF24C2055F31500880238 /* Debug */,
+				847CF24D2055F31500880238 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		847CF2242055F31400880238 /* MadarTask.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				847CF2252055F31400880238 /* MadarTask.xcdatamodel */,
+			);
+			currentVersion = 847CF2252055F31400880238 /* MadarTask.xcdatamodel */;
+			path = MadarTask.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 847CF2122055F31400880238 /* Project object */;
+}
