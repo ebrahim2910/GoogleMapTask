@@ -1,14 +1,19 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="rZg-ck-bxX">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MadarTask" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +21,192 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pds-Cd-ww0">
+                                <rect key="frame" x="16" y="72" width="41" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="banks"/>
+                                <connections>
+                                    <action selector="toBank:" destination="BYZ-38-t0r" eventType="touchUpInside" id="php-lL-riO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6PS-cg-AQR">
+                                <rect key="frame" x="304" y="93" width="55" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="mosque"/>
+                                <connections>
+                                    <action selector="toMosque:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xBI-0D-Lmh"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
+                    <navigationItem key="navigationItem" id="4EA-CS-KNS"/>
+                    <connections>
+                        <outlet property="bankBtn" destination="pds-Cd-ww0" id="e2A-qS-lNW"/>
+                        <outlet property="mosqueBtn" destination="6PS-cg-AQR" id="bwY-XT-eYN"/>
+                        <segue destination="GCB-wZ-bK3" kind="show" identifier="toBanks" id="JXa-ho-CUT"/>
+                        <segue destination="ZYT-gm-aGy" kind="show" identifier="toMosque" id="oss-O6-Gi4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="972" y="69.715142428785612"/>
+        </scene>
+        <!--Banks View Controller-->
+        <scene sceneID="62M-t4-CVA">
+            <objects>
+                <viewController id="GCB-wZ-bK3" customClass="BanksViewController" customModule="MadarTask" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="JPR-jb-QjU"/>
+                        <viewControllerLayoutGuide type="bottom" id="ByI-cu-7Yc"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="unJ-G5-im4">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ig8-X2-oGN">
+                                <rect key="frame" x="16" y="64" width="343" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" id="Drt-m4-UKZ" customClass="BankTableViewCell" customModule="MadarTask" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="343" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Drt-m4-UKZ" id="dJd-Zt-Bkh">
+                                            <rect key="frame" x="0.0" y="0.0" width="343" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l20-aW-kkk">
+                                                    <rect key="frame" x="8" y="8" width="347" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="placeName" destination="l20-aW-kkk" id="BK1-J3-6cO"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ig8-X2-oGN" firstAttribute="top" secondItem="JPR-jb-QjU" secondAttribute="bottom" id="WhL-xh-q0p"/>
+                            <constraint firstItem="ByI-cu-7Yc" firstAttribute="top" secondItem="ig8-X2-oGN" secondAttribute="bottom" id="Wp6-jP-ybh"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ig8-X2-oGN" secondAttribute="trailing" id="bdN-D9-Lfd"/>
+                            <constraint firstItem="ig8-X2-oGN" firstAttribute="leading" secondItem="unJ-G5-im4" secondAttribute="leadingMargin" id="qFo-5t-Kin"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="ig8-X2-oGN" id="Qhg-Ux-Woz"/>
+                        <segue destination="pif-ZC-pVw" kind="show" identifier="fromBank" id="D1A-2P-5Pl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="daz-U3-6OA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2010.4000000000001" y="413.3433283358321"/>
+        </scene>
+        <!--Mosque View Controller-->
+        <scene sceneID="KLz-zl-HTR">
+            <objects>
+                <viewController id="ZYT-gm-aGy" customClass="MosqueViewController" customModule="MadarTask" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="pfY-em-Epq"/>
+                        <viewControllerLayoutGuide type="bottom" id="udi-r9-9bS"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="yA8-wC-aSZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="cnU-jy-Hi2">
+                                <rect key="frame" x="16" y="0.0" width="343" height="647"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" id="Ku0-L6-e1l" customClass="MosqueTableViewCell" customModule="MadarTask" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="343" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Ku0-L6-e1l" id="aHn-M8-QYe">
+                                            <rect key="frame" x="0.0" y="0.0" width="343" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yW5-xi-Dhc">
+                                                    <rect key="frame" x="19" y="8" width="267" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="mosqueNameLable" destination="yW5-xi-Dhc" id="Md9-fM-E4E"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="ZYT-gm-aGy" id="9qw-t8-BbT"/>
+                                    <outlet property="delegate" destination="ZYT-gm-aGy" id="Ubp-1I-9YR"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="cnU-jy-Hi2" firstAttribute="leading" secondItem="yA8-wC-aSZ" secondAttribute="leadingMargin" id="8zz-E6-fBY"/>
+                            <constraint firstItem="udi-r9-9bS" firstAttribute="top" secondItem="cnU-jy-Hi2" secondAttribute="bottom" id="Dk6-Df-oLj"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="cnU-jy-Hi2" secondAttribute="trailing" id="Je8-La-3Nu"/>
+                            <constraint firstItem="cnU-jy-Hi2" firstAttribute="top" secondItem="pfY-em-Epq" secondAttribute="bottom" id="OCY-Zz-Vgn"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="cnU-jy-Hi2" id="mK3-5g-KhD"/>
+                        <segue destination="pif-ZC-pVw" kind="show" identifier="fromMosque" id="vml-jb-xVM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xOL-0h-ZcV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1071.2" y="1077.2113943028487"/>
+        </scene>
+        <!--Second View Controller-->
+        <scene sceneID="Zg5-se-5Yo">
+            <objects>
+                <viewController id="pif-ZC-pVw" customClass="SecondViewController" customModule="MadarTask" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Sgd-wA-vJX"/>
+                        <viewControllerLayoutGuide type="bottom" id="fnn-XG-XWr"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="rhB-0u-XKM">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mo2-Ma-KDA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2895.1999999999998" y="663.41829085457277"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="vCx-H5-ilC">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="rZg-ck-bxX" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="PHp-gb-4Ke">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="9E1-3p-7lK"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="h4w-wt-Bel" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-639.20000000000005" y="-228.03598200899552"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="D1A-2P-5Pl"/>
+    </inferredMetricsTieBreakers>
 </document>

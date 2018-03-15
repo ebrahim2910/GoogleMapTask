@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		80B08C638F6BCB8158FF8950 /* Pods_MadarTaskUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBE9D4C1C4A477BE08F40FEF /* Pods_MadarTaskUITests.framework */; };
+		840D1E6F2058D46C0000F984 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840D1E6E2058D46C0000F984 /* SecondViewController.swift */; };
+		840F4D8F205814B600F0C7BF /* BanksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840F4D8E205814B600F0C7BF /* BanksViewController.swift */; };
+		840F4D912058156E00F0C7BF /* BankTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840F4D902058156E00F0C7BF /* BankTableViewCell.swift */; };
+		840F4D93205819D900F0C7BF /* BankClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840F4D92205819D800F0C7BF /* BankClass.swift */; };
+		840F4D95205840DD00F0C7BF /* MosqueClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840F4D94205840DD00F0C7BF /* MosqueClass.swift */; };
+		840F4D972058418400F0C7BF /* MosqueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840F4D962058418400F0C7BF /* MosqueViewController.swift */; };
+		840F4D992058426E00F0C7BF /* MosqueTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840F4D982058426E00F0C7BF /* MosqueTableViewCell.swift */; };
 		847CF21E2055F31400880238 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847CF21D2055F31400880238 /* AppDelegate.swift */; };
 		847CF2202055F31400880238 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847CF21F2055F31400880238 /* ViewController.swift */; };
 		847CF2232055F31400880238 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 847CF2212055F31400880238 /* Main.storyboard */; };
@@ -15,6 +23,8 @@
 		847CF22B2055F31400880238 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 847CF2292055F31400880238 /* LaunchScreen.storyboard */; };
 		847CF2362055F31500880238 /* MadarTaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847CF2352055F31500880238 /* MadarTaskTests.swift */; };
 		847CF2412055F31500880238 /* MadarTaskUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847CF2402055F31500880238 /* MadarTaskUITests.swift */; };
+		AF412910B5E8A3DBC262D942 /* Pods_MadarTask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBDCF22AFE0C54C6DB9F8626 /* Pods_MadarTask.framework */; };
+		EA1F6FBFFB2D7AFEACDFC454 /* Pods_MadarTaskTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31CB7C906FFECB179706BF38 /* Pods_MadarTaskTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +45,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		31CB7C906FFECB179706BF38 /* Pods_MadarTaskTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MadarTaskTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		49B7D19079B56D835420EF7B /* Pods-MadarTaskUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MadarTaskUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MadarTaskUITests/Pods-MadarTaskUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		4B94F921676BF7025C37636B /* Pods-MadarTask.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MadarTask.release.xcconfig"; path = "Pods/Target Support Files/Pods-MadarTask/Pods-MadarTask.release.xcconfig"; sourceTree = "<group>"; };
+		63BFE092D109F3B50089D6F1 /* Pods-MadarTaskTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MadarTaskTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MadarTaskTests/Pods-MadarTaskTests.debug.xcconfig"; sourceTree = "<group>"; };
+		840D1E6E2058D46C0000F984 /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		840F4D8E205814B600F0C7BF /* BanksViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BanksViewController.swift; sourceTree = "<group>"; };
+		840F4D902058156E00F0C7BF /* BankTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BankTableViewCell.swift; sourceTree = "<group>"; };
+		840F4D92205819D800F0C7BF /* BankClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BankClass.swift; sourceTree = "<group>"; };
+		840F4D94205840DD00F0C7BF /* MosqueClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MosqueClass.swift; sourceTree = "<group>"; };
+		840F4D962058418400F0C7BF /* MosqueViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MosqueViewController.swift; sourceTree = "<group>"; };
+		840F4D982058426E00F0C7BF /* MosqueTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MosqueTableViewCell.swift; sourceTree = "<group>"; };
 		847CF21A2055F31400880238 /* MadarTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MadarTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		847CF21D2055F31400880238 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		847CF21F2055F31400880238 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +70,11 @@
 		847CF23C2055F31500880238 /* MadarTaskUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MadarTaskUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		847CF2402055F31500880238 /* MadarTaskUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MadarTaskUITests.swift; sourceTree = "<group>"; };
 		847CF2422055F31500880238 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BBE9D4C1C4A477BE08F40FEF /* Pods_MadarTaskUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MadarTaskUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C31CD09641C6E673FAD84BC4 /* Pods-MadarTask.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MadarTask.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MadarTask/Pods-MadarTask.debug.xcconfig"; sourceTree = "<group>"; };
+		D9C476F2EFB0363987BE9CF1 /* Pods-MadarTaskUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MadarTaskUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MadarTaskUITests/Pods-MadarTaskUITests.release.xcconfig"; sourceTree = "<group>"; };
+		F2257F1AD92344A34D937E27 /* Pods-MadarTaskTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MadarTaskTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MadarTaskTests/Pods-MadarTaskTests.release.xcconfig"; sourceTree = "<group>"; };
+		FBDCF22AFE0C54C6DB9F8626 /* Pods_MadarTask.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MadarTask.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF412910B5E8A3DBC262D942 /* Pods_MadarTask.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA1F6FBFFB2D7AFEACDFC454 /* Pods_MadarTaskTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +98,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				80B08C638F6BCB8158FF8950 /* Pods_MadarTaskUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1A19EC960D8F9EDA6677A2E9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FBDCF22AFE0C54C6DB9F8626 /* Pods_MadarTask.framework */,
+				31CB7C906FFECB179706BF38 /* Pods_MadarTaskTests.framework */,
+				BBE9D4C1C4A477BE08F40FEF /* Pods_MadarTaskUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		847CF2112055F31400880238 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +122,8 @@
 				847CF2342055F31500880238 /* MadarTaskTests */,
 				847CF23F2055F31500880238 /* MadarTaskUITests */,
 				847CF21B2055F31400880238 /* Products */,
+				E82858ABF62D9DB34B5F47A6 /* Pods */,
+				1A19EC960D8F9EDA6677A2E9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,11 +142,18 @@
 			children = (
 				847CF21D2055F31400880238 /* AppDelegate.swift */,
 				847CF21F2055F31400880238 /* ViewController.swift */,
+				840F4D8E205814B600F0C7BF /* BanksViewController.swift */,
+				840F4D92205819D800F0C7BF /* BankClass.swift */,
+				840F4D902058156E00F0C7BF /* BankTableViewCell.swift */,
 				847CF2212055F31400880238 /* Main.storyboard */,
 				847CF2272055F31400880238 /* Assets.xcassets */,
 				847CF2292055F31400880238 /* LaunchScreen.storyboard */,
 				847CF22C2055F31400880238 /* Info.plist */,
 				847CF2242055F31400880238 /* MadarTask.xcdatamodeld */,
+				840F4D94205840DD00F0C7BF /* MosqueClass.swift */,
+				840F4D962058418400F0C7BF /* MosqueViewController.swift */,
+				840F4D982058426E00F0C7BF /* MosqueTableViewCell.swift */,
+				840D1E6E2058D46C0000F984 /* SecondViewController.swift */,
 			);
 			path = MadarTask;
 			sourceTree = "<group>";
@@ -128,6 +176,19 @@
 			path = MadarTaskUITests;
 			sourceTree = "<group>";
 		};
+		E82858ABF62D9DB34B5F47A6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C31CD09641C6E673FAD84BC4 /* Pods-MadarTask.debug.xcconfig */,
+				4B94F921676BF7025C37636B /* Pods-MadarTask.release.xcconfig */,
+				63BFE092D109F3B50089D6F1 /* Pods-MadarTaskTests.debug.xcconfig */,
+				F2257F1AD92344A34D937E27 /* Pods-MadarTaskTests.release.xcconfig */,
+				49B7D19079B56D835420EF7B /* Pods-MadarTaskUITests.debug.xcconfig */,
+				D9C476F2EFB0363987BE9CF1 /* Pods-MadarTaskUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +196,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 847CF2452055F31500880238 /* Build configuration list for PBXNativeTarget "MadarTask" */;
 			buildPhases = (
+				EEFFCF1510D41DCB881320A3 /* [CP] Check Pods Manifest.lock */,
 				847CF2162055F31400880238 /* Sources */,
 				847CF2172055F31400880238 /* Frameworks */,
 				847CF2182055F31400880238 /* Resources */,
+				855C045ADC9EF5C61802DC4C /* [CP] Embed Pods Frameworks */,
+				B34FD5263A6FA62FB837ECD0 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -152,9 +216,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 847CF2482055F31500880238 /* Build configuration list for PBXNativeTarget "MadarTaskTests" */;
 			buildPhases = (
+				E84FB07F01207AA202F28120 /* [CP] Check Pods Manifest.lock */,
 				847CF22D2055F31500880238 /* Sources */,
 				847CF22E2055F31500880238 /* Frameworks */,
 				847CF22F2055F31500880238 /* Resources */,
+				251A941AF574D3C8ECBC2218 /* [CP] Embed Pods Frameworks */,
+				DB071D12E2F6B2AD8B3880AE /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -170,9 +237,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 847CF24B2055F31500880238 /* Build configuration list for PBXNativeTarget "MadarTaskUITests" */;
 			buildPhases = (
+				C8E20479F1D7E8E634F66712 /* [CP] Check Pods Manifest.lock */,
 				847CF2382055F31500880238 /* Sources */,
 				847CF2392055F31500880238 /* Frameworks */,
 				847CF23A2055F31500880238 /* Resources */,
+				8E3182A20449A4899DB88318 /* [CP] Embed Pods Frameworks */,
+				C96B40F763E2F93DF067E999 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -257,13 +327,158 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		251A941AF574D3C8ECBC2218 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MadarTaskTests/Pods-MadarTaskTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		855C045ADC9EF5C61802DC4C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MadarTask/Pods-MadarTask-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8E3182A20449A4899DB88318 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MadarTaskUITests/Pods-MadarTaskUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B34FD5263A6FA62FB837ECD0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MadarTask/Pods-MadarTask-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C8E20479F1D7E8E634F66712 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C96B40F763E2F93DF067E999 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MadarTaskUITests/Pods-MadarTaskUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DB071D12E2F6B2AD8B3880AE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MadarTaskTests/Pods-MadarTaskTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E84FB07F01207AA202F28120 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		EEFFCF1510D41DCB881320A3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		847CF2162055F31400880238 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				847CF2262055F31400880238 /* MadarTask.xcdatamodeld in Sources */,
+				840F4D95205840DD00F0C7BF /* MosqueClass.swift in Sources */,
 				847CF2202055F31400880238 /* ViewController.swift in Sources */,
+				840F4D93205819D900F0C7BF /* BankClass.swift in Sources */,
+				840F4D8F205814B600F0C7BF /* BanksViewController.swift in Sources */,
+				840F4D912058156E00F0C7BF /* BankTableViewCell.swift in Sources */,
+				840F4D992058426E00F0C7BF /* MosqueTableViewCell.swift in Sources */,
+				840F4D972058418400F0C7BF /* MosqueViewController.swift in Sources */,
+				840D1E6F2058D46C0000F984 /* SecondViewController.swift in Sources */,
 				847CF21E2055F31400880238 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -414,6 +629,7 @@
 		};
 		847CF2462055F31500880238 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C31CD09641C6E673FAD84BC4 /* Pods-MadarTask.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MadarTask/Info.plist;
@@ -426,6 +642,7 @@
 		};
 		847CF2472055F31500880238 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B94F921676BF7025C37636B /* Pods-MadarTask.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MadarTask/Info.plist;
@@ -438,6 +655,7 @@
 		};
 		847CF2492055F31500880238 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 63BFE092D109F3B50089D6F1 /* Pods-MadarTaskTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -452,6 +670,7 @@
 		};
 		847CF24A2055F31500880238 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F2257F1AD92344A34D937E27 /* Pods-MadarTaskTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -466,6 +685,7 @@
 		};
 		847CF24C2055F31500880238 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 49B7D19079B56D835420EF7B /* Pods-MadarTaskUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = MadarTaskUITests/Info.plist;
@@ -479,6 +699,7 @@
 		};
 		847CF24D2055F31500880238 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D9C476F2EFB0363987BE9CF1 /* Pods-MadarTaskUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = MadarTaskUITests/Info.plist;
@@ -509,6 +730,7 @@
 				847CF2472055F31500880238 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		847CF2482055F31500880238 /* Build configuration list for PBXNativeTarget "MadarTaskTests" */ = {
 			isa = XCConfigurationList;
@@ -517,6 +739,7 @@
 				847CF24A2055F31500880238 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		847CF24B2055F31500880238 /* Build configuration list for PBXNativeTarget "MadarTaskUITests" */ = {
 			isa = XCConfigurationList;
@@ -525,6 +748,7 @@
 				847CF24D2055F31500880238 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
