@@ -38,8 +38,8 @@ class BanksViewController: UIViewController , CLLocationManagerDelegate ,UITable
 //            locationManager.startUpdatingLocation()
 //        
 //        
-//        tableView.dataSource = self
-//        tableView.delegate = self
+       tableView.dataSource = self
+        tableView.delegate = self
 //        let locValue:CLLocationCoordinate2D = locationManager.location!.coordinate
 //        print("locations = \(locValue.latitude) ,\(locValue.longitude)")
 //        
@@ -47,13 +47,21 @@ class BanksViewController: UIViewController , CLLocationManagerDelegate ,UITable
         
       //let coordination =   UserDefaults.standard.object(forKey: "coordinationPlaces") as! String
         
-        
+        tableView.tableFooterView = UIView(frame: .zero)
+
         if( UserDefaults.standard.object(forKey:"coordinationPlaces") as? String != nil){
             let coordination =   UserDefaults.standard.object(forKey: "coordinationPlaces") as! String
             loadBankData(myCoordintion: coordination)
 
-        }
+      }
+        else {
+            let alert = UIAlertController(title: "Alert", message: "empty user location ", preferredStyle: UIAlertControllerStyle.alert)
+            alert.addAction(UIAlertAction(title: "Cancel", style: UIAlertActionStyle.default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
         
+        
+        }
+        //loadBankData()
         
     }
     
@@ -66,9 +74,16 @@ class BanksViewController: UIViewController , CLLocationManagerDelegate ,UITable
     
 
 
-    func loadBankData( myCoordintion : String) {
+    func loadBankData( myCoordintion: String ) {
         
-        //let urlStr = UserDefaults.standard.object(forKey: "teamPlayerHref") as? String
+        
+        
+        //31.2001,29.9187  in case  the simulator did not get location you can  use this coordintion to get banks
+        
+        
+        
+        
+        
         
         let url = "https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=\(myCoordintion)&radius=5000&type=bank&key=AIzaSyBKysKgVzsjYKeRAuaqeMpEKTk_1de2Odg"
         
@@ -95,6 +110,9 @@ class BanksViewController: UIViewController , CLLocationManagerDelegate ,UITable
                 do{
                     
                     let fetchData = try JSONSerialization.jsonObject(with: data! , options:JSONSerialization.ReadingOptions.allowFragments) as! [String : AnyObject]
+                    
+                    
+                    
                     
                     let arrJSON = fetchData["results"] as! [[String : Any]]
                     
@@ -193,6 +211,8 @@ class BanksViewController: UIViewController , CLLocationManagerDelegate ,UITable
         let lonString = NSString(format: "%.2f", lonNumber)
         
         UserDefaults.standard.set( lonString , forKey: "longitude")
+        
+        UserDefaults.standard.set( bankDataArray[indexPath.row].bankName , forKey: "palceName")
         
        performSegue(withIdentifier: "fromBank", sender: self)
     }

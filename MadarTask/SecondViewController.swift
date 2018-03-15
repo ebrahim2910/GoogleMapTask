@@ -33,7 +33,7 @@ class SecondViewController: UIViewController {
         
         let marker = GMSMarker()
             marker.position = CLLocationCoordinate2D(latitude: CLLocationDegrees(mapLat), longitude: CLLocationDegrees(mapLong) )
-        
+        marker.title = UserDefaults.standard.object(forKey: "placeName") as? String
             marker.map = mapView
         
         

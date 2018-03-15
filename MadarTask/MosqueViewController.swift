@@ -24,19 +24,32 @@ class MosqueViewController: UIViewController , UITableViewDelegate  , UITableVie
         
         tableView.dataSource = self
         tableView.delegate = self
+        
+        tableView.tableFooterView = UIView(frame: .zero)
+
         if( UserDefaults.standard.object(forKey: "coordinationPlaces") as? String != nil){
         let coordination =   UserDefaults.standard.object(forKey: "coordinationPlaces") as! String
             
             loadMosqueData(myCoordintion: coordination)
 
         }
-        
+        else {
+            let alert = UIAlertController(title: "Alert", message: "empty user location ", preferredStyle: UIAlertControllerStyle.alert)
+            alert.addAction(UIAlertAction(title: "Cancel", style: UIAlertActionStyle.default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
+            
+            
+        }
         
     }
     
     func loadMosqueData(myCoordintion: String) {
         
-        //let urlStr = UserDefaults.standard.object(forKey: "teamPlayerHref") as? String
+      
+        //31.2001,29.9187  in case  the simulator did not get location you can  use this coordintion to get Mosques
+
+        
+
         
         let url = "https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=\(myCoordintion)&radius=5000&type=mosque&key=AIzaSyBKysKgVzsjYKeRAuaqeMpEKTk_1de2Odg"
         
@@ -157,7 +170,13 @@ class MosqueViewController: UIViewController , UITableViewDelegate  , UITableVie
         
         let lonString = NSString(format: "%.2f", lonNumber)
         
+        
+        
+        UserDefaults.standard.set( mosqueDataArray[indexPath.row].mosqueName , forKey: "palceName")
+        
         UserDefaults.standard.set( lonString , forKey: "longitude")
+        
+        
         
         performSegue(withIdentifier: "fromMosque", sender: self)
         

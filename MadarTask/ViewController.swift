@@ -91,7 +91,7 @@ class ViewController: UIViewController ,CLLocationManagerDelegate {
         var coordination = "\(location?.latitude),\(location?.longitude)"
         
         UserDefaults.standard.set(coordination, forKey: "coordinationPlaces")
-        print(location?.longitude)
+       // print(location?.longitude)
         
         
         
